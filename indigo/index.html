@@ -33,58 +33,31 @@
 
   	</head>
   	<body>
-  		<nav class="navbar navbar-default" role="navigation">
-  			<div class="container">
-  				<!-- Brand and toggle get grouped for better mobile display -->
-  				<div class="navbar-header">
-  					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-  						<span class="sr-only">Toggle navigation</span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  						<span class="icon-bar"></span>
-  					</button>
-  					<a class="navbar-brand" href="#">Vine O'Clock</a>
-  				</div>
-  		
-  				<!-- Collect the nav links, forms, and other content for toggling -->
-  				<div class="collapse navbar-collapse navbar-ex1-collapse">
-  					<ul class="nav navbar-nav navbar-right">
-  						<li><a href="#">Timer</a></li>
-						  <li><a href="#">Why</a></li>
-						  <li><a href="#">About</a></li>
-  						<li><a href="#">Donate</a></li>
-  					</ul>
-  				</div><!-- /.navbar-collapse -->
-  			</div>
-  		</nav>
-		
 		<!-- START SECTION -->
-  		<div class="section hero text-center background-dark dark-bg">
-  			<div class="background-image" style="background: url(images/background.jpg) no-repeat center center; background-size: cover; opacity: .2;"></div>
+  		<div class="section hero text-center transparency">
   			<div class="container">
   				<div class="row">
   					<div class="col-md-12">
-						  <h2>Vine O'Clock</h2>
-						  <p>
+
+						<!--LOGO-->
+						<div id="logo-div">
+							<img src="images/1-logo.gif" width="40%" />
+						</div>
+
+						<!--DESCRIPTION-->
+						<p id="description">
 							A countdown timer that uses Vine instead of Time
-						  </p>
-						 <h3>
-							<div id='timer'>00:00:00:00</div>
-							<div id='labels'>
-								<span id='hh'>Hours</span>
-								<span id='mm'>Minutes</span>
-								<span id='ss'>Seconds</span>
-								<span id='ms'>Centiseconds</span>
-							</div>
+						</p>
+
+						  <!--TIMER INPUTS-->
+						<div>
+								<input class="timer-input" /><label class="spaces"></label>
+								<label class="timer-text">:</label><label class="spaces"></label>
+								<input class="timer-input" /><label class="spaces"></label>
+								<label class="timer-text">:</label><label class="spaces"></label>
+								<input class="timer-input" />
+						</div>
 					
-							<div id='controls'>
-								<button onclick='startTimer()' id='go'>Go</button>
-								<button onclick='stopTimer()'  id='stop'>Stop</button>
-								<button onclick='clearTimer()' id='clear'>Clear</button>
-							</div>
-					
-							<script src="./script.js"></script>
-						 </h3>
   						<ul class="list-inline">
   							<li><a href="#" title="Learn More" class="btn btn-md btn-info">Start Timer</a></li>
   							<li><a href="#" title="Learn More" class="btn btn-md btn-primary">Stop Timer</a></li>

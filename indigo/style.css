@@ -1,55 +1,46 @@
-#timer {
-	width: 200px;
-	font-size: 50px;
-	background-color: transparent;
-	color: white;
-	padding: 25px;
-	border-radius: 10px;
-  }
-  #labels {
-	margin-top: -25px;
-	z-index: 100;
-	color: white;
-	font-size: 15px;
-  }
-  #hh {margin-left: 45px;}
-  #mm {margin-left: 80px;}
-  #ss {margin-left: 70px;}
-  #ms {margin-left: 45px;}
-  
-  #controls {
-	margin-left:50px;
-	margin-top: 30px;
-  }
-  
-  button {
-	width: 100px;
-	height: 40px;
-	float: left;
-	margin-left: 50px;
-	font-size: 25px;
-	font-weight: bold;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px #888888;
-  }
-  #go    { background-color: limegreen; }
-  
-  #stop  { background-color: red;  display: none; }
-  
-  #clear { background-color: yellow; display: none;}
-  
-  body, button {
-	font-family: 'Courier';
-  }
-
-
 body {
 	font-family: 'Poppins', sans-serif;
 	color: #2c3e50;
+	background-size: cover;
+	background: url(images/background.jpg) no-repeat center center; 
+	background-size: cover;
 }
 
 a {
 	transition: all .3s;
+}
+
+.transparency {
+	background: rgba(0, 0, 0, 0.5);
+	background-size: cover;
+}
+
+#logo-div {
+	min-width: 100%;
+	min-height: 110px;
+}
+
+#description {
+	color: white;
+	min-height: 40px;
+}
+
+.timer-text {
+	color: white;
+}
+
+.timer-input {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border-bottom: 5px solid #28DEAD;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.spaces {
+	width: 15px;
 }
 
 /*	FORMS
