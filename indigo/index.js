@@ -1,6 +1,7 @@
 function beginTime() {
     let button = document.getElementById("time");
     let video = document.getElementById("video");
+    let timeVals = document.getElementById("timer");
 
     console.log("Running pseudoshuffle");
     pseudoShuffle();
@@ -8,6 +9,10 @@ function beginTime() {
     console.log("Swapping button with video");
     button.style.display = 'none';
     video.style.display = 'block';
+
+    console.log("Now trying to change timer");
+
+    timeVals.innerHTML = "<p style='color:white;min-height:50px'>" + numOfVines() +"</p>";
 
     console.log("end");
     
@@ -22,27 +27,16 @@ function pseudoShuffle() {
     video.src = url;
 }
 
-function beginTime() {
-    console.log("start");
-    let button = document.getElementById("time");
-    let video = document.getElementById("video");
-
-    button.style.display = 'none';
-    video.style.display = 'block';
-
-    console.log("end");
-}
-
 function calcSecs() {
     let hours, minutes, seconds;
 
-    hours = Number(document.getElementById("hr"));
-    minutes = Number(document.getElementById("min"));
-    seconds = Number(document.getElementById("sec"));
-
+    hours = Number(document.getElementById("hr").value);
+    minutes = Number(document.getElementById("min").value);
+    seconds = Number(document.getElementById("sec").value);
     return ((hours*3600) + (minutes*60) + seconds);
 }
 
 function numOfVines() {
-    return (math.floor(calcSecs()/7));
+    console.log(calcSecs());
+    return (Math.floor(calcSecs()/7));
 }
