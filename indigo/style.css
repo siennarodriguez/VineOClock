@@ -3,7 +3,7 @@ body {
 	color: #2c3e50;
 	background-size: cover;
 	background: url(images/background.jpg) no-repeat center center; 
-	background-size: auto;
+	background-size: cover;
 }
 
 a {
@@ -466,3 +466,4 @@ h2.section-title + p {
 	font-size: 13px;
 	line-height: 1.8;
 }
+.unihack 
