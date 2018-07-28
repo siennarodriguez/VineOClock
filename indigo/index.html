@@ -58,9 +58,15 @@
 								<input class="timer-input" type="text" placeholder="ss" />
 						</div>
 						
-						<div>
-							<a href="#" title="Learn More" class="btn btn-md btn-info">Start Timer</a>
+						<div id = "time">
+							<a title="Learn More" class="btn btn-md btn-info" onclick = "beginTime()">Start Timer</a>
 						</div>
+
+						<div id = "video" style = "display:none">
+							<a><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLbkUcwpKDITt-dkXqG-KG5cRR4-iIknTO&autoplay=1&controls=0&disablekb=1&enablejsapi=1&showinfo=0&rel=0&shuffle=1" frameborder="0" allow = "autoplay" allow="encrypted-media" allowfullscreen></iframe></a>
+						</div>
+
+
   					</div>
   				</div>
   			</div>
@@ -296,6 +302,7 @@
   		<!-- jQuery -->
   		<script src="//code.jquery.com/jquery.js"></script>
   		<!-- Bootstrap JavaScript -->
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="index.js"></script>  
   	</body>
   </html>
