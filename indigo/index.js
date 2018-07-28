@@ -22,3 +22,27 @@ function pseudoShuffle() {
     video.src = url;
 }
 
+function beginTime() {
+    console.log("start");
+    let button = document.getElementById("time");
+    let video = document.getElementById("video");
+
+    button.style.display = 'none';
+    video.style.display = 'block';
+
+    console.log("end");
+}
+
+function calcSecs() {
+    let hours, minutes, seconds;
+
+    hours = Number(document.getElementById("hr"));
+    minutes = Number(document.getElementById("min"));
+    seconds = Number(document.getElementById("sec"));
+
+    return ((hours*3600) + (minutes*60) + seconds);
+}
+
+function numOfVines() {
+    return (math.floor(calcSecs()/7));
+}
