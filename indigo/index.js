@@ -1,7 +1,9 @@
 function beginTime() {
-    let button = document.getElementById("time");
-    let video = document.getElementById("video");
-    let timeVals = document.getElementById("timer");
+    let button, video, timeVals, vinesLeft, endText;
+
+    button = document.getElementById("time");
+    video = document.getElementById("video");
+    timeVals = document.getElementById("timer");
 
     console.log("Running pseudoshuffle");
     pseudoShuffle();
@@ -12,7 +14,16 @@ function beginTime() {
 
     console.log("Now trying to change timer");
 
-    timeVals.innerHTML = "<p style='color:white;min-height:50px'>" + numOfVines() +"</p>";
+    vinesLeft = numOfVines();
+
+    if (vinesLeft === 1) {
+        endText = " Vine left!";
+    }
+    else {
+        endText = " Vines left!";
+    }
+
+    timeVals.innerHTML = "<p style='color:white;min-height:100px'>" + vinesLeft + endText +"</p>";
 
     console.log("end");
     
@@ -37,6 +48,5 @@ function calcSecs() {
 }
 
 function numOfVines() {
-    console.log(calcSecs());
     return (Math.floor(calcSecs()/7));
 }
