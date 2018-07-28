@@ -422,7 +422,7 @@ h2.section-title + p {
 .entry-media {
 	position: relative;
 	margin-bottom: 30px;
-	overflow: hidden;
+	/* overflow: hidden; */
 	height: 150px;
 }
 .entry-media a {
@@ -466,4 +466,6 @@ h2.section-title + p {
 	font-size: 13px;
 	line-height: 1.8;
 }
-.unihack 
+/* .unihack {
+	height: 150px;
+} *?/
