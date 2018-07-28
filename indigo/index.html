@@ -27,15 +27,36 @@
   	</head>
   	<body>
 		<!-- START SECTION -->
-  		<div class="section hero text-center background-dark dark-bg">
-  			<div class="background-image" style="background: url(images/background.jpg) no-repeat center center; background-size: cover; opacity: .2;"></div>
+  		<div class="section hero text-center transparency">
   			<div class="container">
   				<div class="row">
   					<div class="col-md-12">
-						  <img src="images/1-logo.gif" width="40%" />
-						  <p>
+
+						<!--LOGO-->
+						<div id="logo-div">
+							<img src="images/1-logo.gif" width="40%" />
+						</div>
+
+						<!--DESCRIPTION-->
+						<p id="description">
 							A countdown timer that uses Vine instead of Time
-						  </p>
+						</p>
+
+						  <!--TIMER INPUTS-->
+						  <div>
+								<input />
+								<label class="timer-text">:</label>
+								<input />
+								<label class="timer-text">:</label>
+								<input />
+							</div>
+							
+							<div>
+								<button id="doIt" type="button" onClick="doIt()">Do It!</button>
+							</div>
+
+
+
   						<ul class="list-inline">
   							<li><a href="#" title="Learn More" class="btn btn-md btn-info">Start Timer</a></li>
   							<li><a href="#" title="Learn More" class="btn btn-md btn-primary">Stop Timer</a></li>
