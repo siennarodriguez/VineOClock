@@ -17,17 +17,32 @@ a {
 
 #logo-div {
 	min-width: 100%;
-	min-height: 100px;
+	min-height: 110px;
 }
 
 #description {
 	color: white;
-	min-height: 25px;
+	min-height: 40px;
 }
 
 .timer-text {
 	color: white;
 }
+
+.timer-input {
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	border-bottom: 5px solid #28DEAD;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.spaces {
+	width: 15px;
+}
+
 /*	FORMS
 */
 .form-control {
