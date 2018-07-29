@@ -51,7 +51,7 @@ function updateTimer() {
     // Time calculations for days, hours, minutes and seconds
     var timeleft = removeInput();
     document.getElementById("timer").style.display = "none";
-    
+
     var downloadTimer = setInterval(function(){
     timeleft--;
     /*document.getElementById("timer-countdown-active").innerHTML = timeleft;*/
