@@ -29,6 +29,19 @@ a {
 	color: white;
 }
 
+#timer-countdown-init {
+	display: none;
+}
+
+#timer-countdown-active {
+	width: 60px;
+	height: 60px;
+	border:none;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+
 .timer-input {
 	width: 60px;
 	height: 60px;
