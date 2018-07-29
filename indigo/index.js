@@ -56,8 +56,10 @@ function updateTimer() {
     timeleft--;
     /*document.getElementById("timer-countdown-active").innerHTML = timeleft;*/
     document.getElementById("vineLeftId").innerHTML = timeleft + " seconds of vines left"
-    if(timeleft <= 0)
+    if(timeleft <= 0) {
         clearInterval(downloadTimer);
+        location.reload(true);
+        }
     },1000);
 }
 
