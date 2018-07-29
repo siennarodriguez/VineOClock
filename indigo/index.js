@@ -1,5 +1,5 @@
 function beginTime() {
-    let button, video, timeVals, vinesLeft, endText;
+    let button, video, vinesLeft, endText;
 
     button = document.getElementById("time");
     video = document.getElementById("video");
@@ -32,7 +32,7 @@ function beginTime() {
 function pseudoShuffle() {
     let max = 273;
     let index = Math.floor((Math.random() * max) + 1);
-    let url = "https://www.youtube.com/embed/videoseries?list=PLbkUcwpKDITt-dkXqG-KG5cRR4-iIknTO&autoplay=1&controls=0&disablekb=1&enablejsapi=1&showinfo=0&rel=0&shuffle=1&index=" + index;
+    let url = "https://www.youtube.com/embed/videoseries?list=PLbkUcwpKDITt-dkXqG-KG5cRR4-iIknTO&autoplay=1&controls=0&disablekb=1&enablejsapi=1&showinfo=0&rel=0&index=" + index;
     let video = document.getElementById("inner");
 
     video.src = url;
