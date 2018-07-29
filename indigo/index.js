@@ -52,6 +52,9 @@ function updateTimer() {
     var timeleft = removeInput();
     document.getElementById("timer").style.display = "none";
 
+    var videoTab = document.getElementById("inner");
+    videoTab.src = "https://www.youtube.com/embed/videoseries?list=PLbkUcwpKDITt-dkXqG-KG5cRR4-iIknTO&autoplay=1&controls=0&disablekb=1&enablejsapi=1&showinfo=0&rel=0&shuffle=1";
+
     var downloadTimer = setInterval(function(){
     timeleft--;
     /*document.getElementById("timer-countdown-active").innerHTML = timeleft;*/
