@@ -3,7 +3,7 @@ function beginTime() {
 
     button = document.getElementById("time");
     video = document.getElementById("video");
-    timeVals = document.getElementById("timer");
+    vinesPar = document.getElementById("vineLeftId")
 
     console.log("Running pseudoshuffle");
     pseudoShuffle();
@@ -23,10 +23,10 @@ function beginTime() {
         endText = " Vines left!";
     }
 
-    timeVals.innerHTML = "<p style='color:white;min-height:100px'>" + vinesLeft + endText +"</p>";
+    vinesPar.className = "newVineLeft"
+    vinesPar.innerHTML = vinesLeft + endText;
 
     console.log("end");
-    
 }
 
 function pseudoShuffle() {
@@ -45,7 +45,7 @@ function calcSecs() {
     minutes = Number(document.getElementById("min").value);
     seconds = Number(document.getElementById("sec").value);
     return ((hours*3600) + (minutes*60) + seconds);
-}
+}ow 
 
 function numOfVines() {
     return (Math.floor(calcSecs()/7));

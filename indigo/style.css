@@ -75,6 +75,23 @@ a {
 	min-height: 80px;
 }
 
+.vinesLeft {
+	display: none;
+}
+
+.newVineLeft {
+	color: white;
+	min-height: 50px;
+}
+
+#inner {
+    padding:0;
+    margin:0;
+    left:0;
+	width: 500px;
+	height: 500px;
+}
+
 /*	FORMS
 */
 .form-control {
