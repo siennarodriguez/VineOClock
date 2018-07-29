@@ -50,13 +50,17 @@
 							A countdown timer that uses Vine instead of Time
 						</p>
 
-						  <!--TIMER INPUTS-->
+						<!--TIMER INPUTS-->
 						<div id="timer">
 								<input class="timer-input" type="text" placeholder="hh" id = "hr"/><label class="spaces"></label>
 								<label class="timer-text">:</label><label class="spaces"></label>
+
 								<input class="timer-input" type="text" placeholder="mm" id = "min"/><label class="spaces"></label>
 								<label class="timer-text">:</label><label class="spaces"></label>
 								<input class="timer-input" type="text" placeholder="ss" id = "sec"/>
+						</div>
+
+						<div id="timer-countdown-init">
 						</div>
 
 						<div>
@@ -64,11 +68,11 @@
 						</div>
 						
 						<div id = "time">
-							<a title="Learn More" class="btn btn-md btn-info" onclick = "beginTime()">Start Timer</a>
+							<a title="Learn More" class="btn btn-md btn-info" onclick = "beginTime(); updateTimer()">Start Timer</a>
 						</div>
 
 						<div id = "video" style = "display:none">
-							<a><iframe id = "inner" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLbkUcwpKDITt-dkXqG-KG5cRR4-iIknTO&autoplay=1&controls=0&disablekb=1&enablejsapi=1&showinfo=0&rel=0&shuffle=1" frameborder="0" allow = "autoplay" allow="encrypted-media" allowfullscreen></iframe></a>
+							<a><iframe id = "inner" src="https://www.youtube.com/embed/videoseries?list=PLbkUcwpKDITt-dkXqG-KG5cRR4-iIknTO&autoplay=1&controls=0&disablekb=1&enablejsapi=1&showinfo=0&rel=0&shuffle=1" frameborder="0" allow = "autoplay" allow="encrypted-media" allowfullscreen></iframe></a>
 						</div>
 
 
