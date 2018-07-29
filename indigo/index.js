@@ -45,7 +45,7 @@ function calcSecs() {
     minutes = Number(document.getElementById("min").value);
     seconds = Number(document.getElementById("sec").value);
     return ((hours*3600) + (minutes*60) + seconds);
-}ow 
+}
 
 function numOfVines() {
     return (Math.floor(calcSecs()/7));
